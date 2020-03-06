@@ -4,7 +4,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|first_message|text|
 |name|string|
 
 ### Association
