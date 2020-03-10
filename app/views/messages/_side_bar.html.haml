@@ -7,11 +7,11 @@
     .side-bar__header
       .side-bar__header__contents
         %h.side-bar__header__contents__name name
-        %ul.side-bar__header__contents__icons
-          %a.side-bar__header__contents__icons__edit{href:"#"}
-            %li.edit.fa.fa-edit
-          %a.side-bar__header__contents__icons__cog{href:"#"}
-            %li.cog.fa.fa-cog
+        .side-bar__header__contents__icons
+          =link_to "#" ,class: "side-bar__header__contents__icons__edit" do
+            = icon("fa", "edit")
+          =link_to "#" ,class:"side-bar__header__contents__icons__cog" do
+            = icon("fa", "cog")
     .side-bar__main
       .side-bar__main__contens
         %a.side-bar__main__contens{href:"#"}

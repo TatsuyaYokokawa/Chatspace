@@ -27,19 +27,18 @@
           width: 60px;
           text-align:right;
           text-decoration: none;
-		  padding-left: 5px;
-		  &__edit{
-			text-decoration: none;
-			color: $saidffffff;
-		  }
-		  &__cog{
-			text-decoration: none;
-			color: $saidffffff;
-		  }
+          padding-left: 5px;
+          &__edit{
+            text-decoration: none;
+            color: $saidffffff;
+            }
+          &__cog{
+            text-decoration: none;
+            color: $saidffffff;
+            }
           }
         }
       }
-	
   &__main{
     background-color: #2f3e51;
     height: calc(100% - 100px);
@@ -49,7 +48,6 @@
       height: 91px;
       width:  100%;
       margin-bottom: 40px;
-      text-decoration: none;
       overflow: scroll;
       &__tytle{
         color: $saidffffff;
@@ -57,6 +55,7 @@
         width:  100%;
         font-size: 15px;
         margin-top: 0;
+        text-decoration: none;
         }
       &__first-message{
         color: $saidffffff;
@@ -64,6 +63,7 @@
         font-size: 11px;
         width:  100%;	
         margin: 5px 0;
+        text-decoration: none;
         }
       }
     }

@@ -10,7 +10,8 @@
         %ul.main__header__tytle__member 
           Menber : 
           %li.main__header__tytle__member__list test
-      %a.main__header__edit{href:"#"}Edit
+      =link_to "#", class:"main__header__edit" do
+        = "Edit"
     .main__contents
       .main__contents__message-info
         %p.main__contents__message-info__user-name user
