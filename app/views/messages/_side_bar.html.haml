@@ -1,21 +1,22 @@
 !!!
 %html{lang: "ja"}
-	%head
-	%meta{charset: "utf-8"}
+  %head
+  %meta{charset: "utf-8"}
 %body
-	.side-bar
-		.side-bar__header
-			.side-bar__header__contents
-				%h.side-bar__header__contents__name name
-				%ul.side-bar__header__contents__icons
-					%a.side-bar__header__contents__icons{:href=>:"#"}
-						%li.edit.fa.fa-edit
-						%li.cog.fa.fa-cog
-		.side-bar__main
-			.side-bar__main__contens
-				%a.side-bar__main__contens{:href=>:"#"}
-					%p.side-bar__main__contens__tytle aa
-					%p.side-bar__main__contens__first-message ff
+  .side-bar
+    .side-bar__header
+      .side-bar__header__contents
+        %h.side-bar__header__contents__name name
+        %ul.side-bar__header__contents__icons
+          %a.side-bar__header__contents__icons__edit{href:"#"}
+            %li.edit.fa.fa-edit
+          %a.side-bar__header__contents__icons__cog{href:"#"}
+            %li.cog.fa.fa-cog
+    .side-bar__main
+      .side-bar__main__contens
+        %a.side-bar__main__contens{href:"#"}
+          %p.side-bar__main__contens__tytle aa
+          %p.side-bar__main__contens__first-message ff
 
 
 
