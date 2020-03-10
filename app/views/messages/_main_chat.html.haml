@@ -1,0 +1,29 @@
+!!!
+%html{lang: "ja"}
+	%head
+	%meta{charset: "utf-8"}
+%body
+	.main
+		.main__header
+			.main__header__tytle
+				%h.main__header__tytle__name name
+				%ul.main__header__tytle__member
+					Member : 
+					%li.main__header__tytle__member-name test
+			= link_to "#" do
+				%p.main__header__edit Edit
+		.main__contents
+			.main__contents__message-info
+				%p.main__contents__message-info__user-name user
+				%p.main__contents__message-info__post-time 2020/03/09 16:49
+			.main__contents__message-posts
+				%p.main__contents__message-posts__text test
+		.main__footer
+			%form.main__footer__text-space
+				.main__footer__text-space__type-a-message
+					%input.main__footer__text-space__type-a-message__post-text{:type=>:text,:placeholder=>:"type a message"}
+					%label.main__footer__text-space__type-a-message__image
+						=icon("fas", "image")
+						%input.main__footer__text-space__type-a-message__image__file{:type=>:file}
+				%input.main__footer__text-space__send-btn{:type=>:submit, :value=>:Send}
+		
