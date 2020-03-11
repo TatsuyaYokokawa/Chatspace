@@ -5,4 +5,6 @@ class Account < ApplicationRecord
          :recoverable, :rememberable, :validatable
   validates :name, presence: true, uniqueness: true
 
+  has_many :group_accounts
+  has_many :groups, through: :group_accounts
 end
