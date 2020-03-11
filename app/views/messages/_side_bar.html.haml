@@ -1,11 +1,12 @@
 .side-bar
   .side-bar__header
     .side-bar__header__contents
-      %h.side-bar__header__contents__name name
+      %h.side-bar__header__contents__name 
+        = current_account.name
       .side-bar__header__contents__icons
         =link_to "#" ,class: "side-bar__header__contents__icons__edit" do
           = icon("fa", "edit")
-        =link_to "#" ,class:"side-bar__header__contents__icons__cog" do
+        =link_to edit_account_path(current_account) ,class:"side-bar__header__contents__icons__cog" do
           = icon("fa", "cog")
   .side-bar__main
     .side-bar__main__contens
