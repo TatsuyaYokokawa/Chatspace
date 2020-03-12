@@ -8,11 +8,11 @@
           = icon("fa", "edit")
         =link_to edit_account_path(current_account) ,class:"side-bar__header__contents__icons__cog" do
           = icon("fa", "cog")
-  .side-bar__main
-    .side-bar__main__contens
-      %a.side-bar__main__contens{href:"#"}
-        %p.side-bar__main__contens__tytle aa
-        %p.side-bar__main__contens__first-message ff
-
-
-
+  .side-bar__groups
+    - current_account.groups.each do |group|
+      %a.side-bar__groups__group{href: "#"}
+      .side-bar__groups__group
+        %p.group__name
+          = group.name
+        %p.group__message
+          メッセージはまだありません。
