@@ -10,9 +10,9 @@
           = icon("fa", "cog")
   .side-bar__groups
     - current_account.groups.each do |group|
-      %a.side-bar__groups__group{href: "#"}
       .side-bar__groups__group
-        %p.group__name
-          = group.name
-        %p.group__message
-          メッセージはまだありません。
+        = link_to group_messagexxes_path(group),class:"side-bar__groups__group" do
+          %p.group-name
+            = group.name
+          %p.group-message
+            = group.show_last_message

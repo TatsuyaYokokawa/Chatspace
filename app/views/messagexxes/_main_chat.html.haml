@@ -1,0 +1,25 @@
+.main
+  .main__header
+    .main__header__tytle
+      %h.main__header__tytle__name 
+        = @group.name
+      %ul.main__header__tytle__member 
+        Member : 
+        %li.main__header__tytle__member__list 
+          - @group.accounts.each do |account|
+            = account.name
+    = link_to edit_group_path(current_account), class:"main__header__edit" do
+      = "Edit"
+
+  .main__contents
+    = render partial: 'message' ,locals: { messages: @messages}
+
+  .main__footer
+    = form_for [@group, @message] do |f|
+      .main__footer__text-space
+        .main__footer__text-space__type-a-message
+          = f.text_field :content, class: 'main__footer__text-space__type-a-message__post-text', placeholder: 'type a message'
+          = f.label :image, class: "main__footer__text-space__type-a-message__image" do
+            = icon("fas", "image")
+            = f.file_field :image, class: "main__footer__text-space__type-a-message__image__file"
+        = f.submit 'Send', class: 'main__footer__text-space__send-btn'
