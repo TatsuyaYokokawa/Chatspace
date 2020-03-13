@@ -43,18 +43,23 @@
     height: calc(100% - 100px);
     width:  300px;
     padding: 20px 20px 0;
+    text-decoration: none;
+    overflow: scroll;
     &__group{
       color: $saidffffff;
       height: 91px;
       width:  100%;
       margin-bottom: 40px;
       overflow: scroll;
+      cursor: pointer;
+      text-decoration: none;
       &__nems{
         color: $saidffffff;
         height: 15px;
         width:  100%;
         font-size: 15px;
         margin-top: 0;
+        text-decoration: none;
         }
       &__message{
         color: $saidffffff;
@@ -62,6 +67,7 @@
         font-size: 11px;
         width:  100%;	
         margin: 5px 0;
+        text-decoration: none;
         }
       }
     }

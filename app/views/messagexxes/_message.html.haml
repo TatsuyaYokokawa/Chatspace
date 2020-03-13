@@ -1,0 +1,11 @@
+- messages.each do|message|
+  .main__contents__message-info
+    .main__contents__message-info__user-name
+      = message.account.name
+    .main__contents__message-info__post-time
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .main__contents__message-text
+    - if message.content.present?
+      %p.main__contents__message-text__content
+        = message.content
+    = image_tag message.image.url, class: 'main__contents__message-text__image' if message.image.present?

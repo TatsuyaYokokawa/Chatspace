@@ -1,4 +1,7 @@
 class AccountsController < ApplicationController
+  def index
+    @account = Account.index(user_params)
+  end
   
   def edit
   end
@@ -16,4 +19,5 @@ class AccountsController < ApplicationController
   def user_params
     params.require(:account).permit(:name, :email)
   end
+
  end
