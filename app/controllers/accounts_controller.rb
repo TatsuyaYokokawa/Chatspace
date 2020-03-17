@@ -1,8 +1,13 @@
 class AccountsController < ApplicationController
   def index
-    @account = Account.index(user_params)
+    return nil if params[:keyword] == ""
+    @accounts = Account.where(['name LIKE ?', "%#{params[:keyword]}%"] ).where.not(id: current_account.id).limit(10)
+    respond_to do |format|
+      format.html
+      format.json
+      end
   end
-  
+
   def edit
   end
   
