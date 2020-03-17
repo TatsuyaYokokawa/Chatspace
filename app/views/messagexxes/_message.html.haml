@@ -1,5 +1,5 @@
 - messages.each do|message|
-  .main__contents__content
+  .main__contents__content{data: {message: {id: message.id}}}
     .main__contents__content__message-info
       .main__contents__content__message-info__user-name
         = message.account.name
