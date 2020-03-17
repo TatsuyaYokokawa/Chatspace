@@ -8,4 +8,5 @@ class Account < ApplicationRecord
   has_many :group_accounts
   has_many :groups, through: :group_accounts
   has_many :messagexxes
+
 end
