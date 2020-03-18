@@ -4,5 +4,4 @@ class Api::MessagexxesController < ApplicationController
      last_message_id = params[:id].to_i
      @messages = group.messagexxes.includes(:account).where("id > ?", last_message_id)
    end
-  end
 end

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :messagexxes, only: [:index, :create]
 
     namespace :api do
-      resources :messages, only: :index, defaults: { format: 'json' }
+      resources :messagexxes, only: :index, defaults: { format: 'json' }
     end
   end
 end
