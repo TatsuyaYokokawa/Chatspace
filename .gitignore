@@ -26,3 +26,4 @@ public/apple-touch-icon.png
 public/favicon.ico
 public/robots.txt
 public/uploads/messagexx/image
+config/secrets.yml
