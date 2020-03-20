@@ -8,7 +8,7 @@
         %li.main__header__tytle__member__list 
           - @group.accounts.each do |account|
             = account.name
-    = link_to edit_group_path(current_account), class:"main__header__edit" do
+    = link_to edit_group_path(@group.id), class:"main__header__edit" do
       = "Edit"
 
   .main__contents
